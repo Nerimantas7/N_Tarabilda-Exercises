@@ -94,6 +94,7 @@ public class Main {
         double a1 = 7.5, a2 = 6.5, a3 = 4.5, a4 = 3, a5 = 47.5, a6 = 5.5, b1 = 12.78, b2 = 15.4, b3 = 2.75;
         double c = ((a1 * a2)-(a3 * a4))/(a5 - a6);
         double d = b1/(b2 - b3);
+        System.out.println("Ar teisinga lygybė: (7.5x6.5-4.x3)/(47.5-5.5)=12.78/(15.4-2.75)?");
         if (c == d){
             System.out.println("Lygybė teisinga: true");
         }else {
