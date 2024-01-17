@@ -91,18 +91,49 @@ public class Main {
 //        System.out.println("myText3.substring(1, 15): " + myText3.substring(1, 15));
 
 //  Užduotis Nr. 8
-        double a1 = 7.5, a2 = 6.5, a3 = 4.5, a4 = 3, a5 = 47.5, a6 = 5.5, b1 = 12.78, b2 = 15.4, b3 = 2.75;
-        double c = ((a1 * a2)-(a3 * a4))/(a5 - a6);
-        double d = b1/(b2 - b3);
-        System.out.println("Ar teisinga lygybė: (7.5x6.5-4.x3)/(47.5-5.5)=12.78/(15.4-2.75)?");
-        if (c == d){
-            System.out.println("Lygybė teisinga: true");
-        }else {
-            System.out.println("Lygybė neteisinga: false");
-        }
+//        double a1 = 7.5, a2 = 6.5, a3 = 4.5, a4 = 3, a5 = 47.5, a6 = 5.5, b1 = 12.78, b2 = 15.4, b3 = 2.75;
+//        double c = ((a1 * a2)-(a3 * a4))/(a5 - a6);
+//        double d = b1/(b2 - b3);
+//        System.out.println("Ar teisinga lygybė: (7.5x6.5-4.x3)/(47.5-5.5)=12.78/(15.4-2.75)?");
+//        if (c == d){
+//            System.out.println("Lygybė teisinga: true");
+//        }else {
+//            System.out.println("Lygybė neteisinga: false");
+//        }
 //  Užduotis Nr. 9
+//        int myInt = 10;
+//        System.out.println("Primitivusis kintamasis int: " + myInt);
+//        double myDou = 20.56;
+//        System.out.println("Primitivusis kintamasis double: " + myDou);
+//        Integer myInteger = Integer.valueOf(myInt);
+//        System.out.println("Primitiviojo kintamojo int vertimas į objektą Integer (autoboxing): " + myInteger);
+//        System.out.println("Objekto myInteger hach kodas: " + myInteger.hashCode());
+//        Double myDouble = Double.valueOf(myDou);
+//        System.out.println("Primitiviojo kintamojo double vertimas į objektą Double (autoboxing): " + myDouble);
+//        System.out.println("Objekto myDouble hach kodas: " + myDouble.hashCode());
+//        int myInt1 = myInteger;
+//        System.out.println("Primitivusis kintamasis int: " + myInt1);  //unboxing
+//        double myDou1 = myDouble;
+//        System.out.println("Primitivusis kintamasis double: " + myDou1);    //unboxing
 
 //  Užduotis Nr. 10
+        String myText = "1 5 8 145 35 68 94 12 77";
+        System.out.println(myText);
+        String[] textNumbers = myText.split(" ");
+        System.out.println(textNumbers.length);
+        int[] numbers = new int[textNumbers.length];
+        System.out.println(numbers.length);
+        for (int i = 0; i < textNumbers.length; i++){
+            numbers[i] = Integer.parseInt(textNumbers[i]);
+        }
+        System.out.println(Arrays.toString(numbers));
+        int sum =0;
+        for (int i = 0; i < textNumbers.length; i++
+             ) {
+            sum += numbers[i];
+        }
+        System.out.println("Suma: " + sum);
+
     }
 }
 
